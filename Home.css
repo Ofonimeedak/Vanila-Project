@@ -1,13 +1,233 @@
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 60px;
+  padding: 20px;
+  align-items: center;
+  background-color: plum;
+}
 
-header{
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 10%;
+}
+
+header .logo i {
+  font-size: 20px;
+  display: none;
+}
+
+header .desktopNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+  width: 30%;
+}
+
+header .desktopNav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+  width: 100%;
+}
+
+header .desktopNav ul li {
+  list-style-type: none;
+}
+
+.desktopNav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul :hover {
+  text-decoration: underline;
+}
+header .user {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  height: 60px;
+  align-items: center;
+}
+
+.hero {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+  background-color: snow;
+}
+.hero .heroImage {
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+.hero .heroImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 3;
+  box-shadow: 10px;
+}
+
+.hero .blockText {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.blockText .text {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 35%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blockText h1 {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: 200;
+}
+
+.blockText .but {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.but button {
+  width: 80%;
+  height: 30%;
+  background-color: plum;
+  border-radius: 30px;
+}
+
+.blockText a {
+  text-decoration: none;
+  position: fixed;
+  top: 76%;
+  right: 15%;
+  color: black;
+}
+.blockText a i {
+  color: green;
+  position: fixed;
+  right: 10%;
+  top: 75%;
+  font-size: 50px;
+}
+section {
+  text-align: left;
+  background-color: plum;
+  border-radius: 10%;
+  height: 30px;
+  width: 130px;
+  padding: 5px;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.product-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card .pcard {
+  display: flex;
+  height: 400px;
+  width: 15%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 7px;
+  z-index: 10;
+  box-shadow: 20px;
+  border: solid plum;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.pcad .im {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+.im img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.pcad .amount {
+  background-color: plum;
+  width: 20px;
+  height: 20px;
+  border: solid plum;
+  border-radius: 10px;
+  opacity: 0.8;
+  padding: 5px;
+}
+
+.pcad .category {
+  background-color: plum;
+  width: 20px;
+  height: 20px;
+  border: solid plum;
+  border-radius: 10px;
+  opacity: 0.8;
+  padding: 5px;
+}
+
+.pcad .description {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,230 +236,214 @@ header{
     padding: 20px;
     align-items: center;
     background-color: plum;
-}
+    gap: 20px;
+    border: solid green;
+  }
 
-header .logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    width: 10%;
-}
-
-header .logo i {
-            font-size: 20px;
-            display: none;
-}
-
-header .desktopNav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 60px;
-    width: 30%;
-}
-
- header .desktopNav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 60px;
-    width: 100%;
-}
-
-header .desktopNav ul li{
-    list-style-type:none;
-}
-
-.desktopNav ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-  ul  :hover { text-decoration: underline;
-
-                        
-    
-}
-header .user{
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
-    height: 60px;
-    align-items: center;
-}
-
-.hero{
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 20px ;
-    background-color:snow;
-
-}
-.hero .heroImage {
-    display: flex;
-    width: 60%;
-    height: 100%;
-}
-.hero .heroImage img{ width: 100%;
-                     height: 100%;
-                     border-radius: 20px;
-                     z-index: 3;
-                     box-shadow: 10px;
-
-}
-
-.hero .blockText{
+  header .logo {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 10%;
+  }
+
+  header .logo i {
+    font-size: 20px;
+    display: none;
+  }
+
+  header .desktopNav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 30%;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 70%;
+    padding: 15px;
+  }
+
+  header .mobileNav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    height: 60px;
+    width: 100%;
+  }
+
+  header .mobileNav ul {
+    list-style-type: none;
+  }
+
+  header .mobileNav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul :hover {
+    text-decoration: underline;
+  }
+
+  header .user {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    height: 60px;
+    align-items: center;
+  }
+
+  /* Hero section */
+
+  .hero {
+    width: 100vw;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    gap: 1px;
+    background-color: snow;
+    flex-direction: column;
+    border: dashed red;
+  }
+  .hero .heroImage {
+    display: flex;
+    width: 90%;
+    height: 60%;
+  }
+  .hero .heroImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: 10px;
+  }
+
+  .hero .blockText {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     align-items: flex-start;
     justify-content: space-around;
-    padding-left: 30px;
-}
+    padding-left: 10px;
+  }
 
-.blockText .text{
-                 display: flex;
-                 justify-content: space-around;
-                 width: 100%;
-                 height:35% ;
-                 flex-direction: column;
-                 gap:10px
-}
-
-.blockText h1 {
+  .blockText h1 {
     text-align: left;
     font-family: sans-serif;
     font-size: larger;
     font-weight: 200;
-}
+  }
 
-.blockText .but{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
-}
+  button {
+    width: 100px;
+    height: 50px;
+    background-color: plum;
+    border-radius: 30px;
+    gap: 30px;
+  }
 
-.but button {
-          width: 80%;
-          height: 30%;
-          background-color: plum;
-           border-radius: 30px;
-}
-
-.blockText a{
-     text-decoration: none;
-     position: fixed;
-     top: 76%;
-     right:15% ;
-     color: black;
-}
-.blockText a i {
-              color: green;
-              position: fixed;
-              right: 10%;
-              top: 75%;
-              font-size: 50px;
-              
-}
-section {
+  .blockText a {
+    text-decoration: none;
+    position: fixed;
+    top: 76%;
+    right: 15%;
+    color: black;
+  }
+  .blockText a i {
+    color: green;
+    position: fixed;
+    right: 10%;
+    top: 75%;
+    font-size: 50px;
+  }
+  section {
     text-align: left;
     background-color: plum;
     border-radius: 10%;
     height: 30px;
     width: 130px;
     padding: 5px;
-    border: solid  black;
+    border: solid black;
     border-radius: 10px;
-}
+  }
 
-
-.card { display: flex;
-    flex-direction: row;
-    height: 300px;
-    width: 1300px;
-    border-radius: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 10px;
-
-    
-}
-.pcad{
+  .product-card {
+    width: 80%;
+    height: auto;
     display: flex;
-    height:500px ;
-    width: 200px;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product-card .pcard {
+    display: flex;
+    height: 80%;
+    width: 70%;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
-    gap: 7px
-    ;
+    gap: 7px;
     z-index: 10;
     box-shadow: 20px;
     border: solid plum;
     margin-left: 30px;
     margin-right: 30px;
-    
-}
+  }
 
-.pcad .im{
-    height: 130px;
-    width: 195px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
+  .pcad .im {
+    height: 80%;
+    width: 100%;
+  }
+  .im img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    align-items: center;
+    padding-left: 10px;
+  }
 
-}
-.pcad img{
-    width: 180px;
-    height: 100px;
-    border-radius: 10px;
-}
-
-.pcad .amount{
+  .pcad .amount {
     background-color: plum;
-    width: 180px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     border: solid plum;
     border-radius: 10px;
     opacity: 0.8;
     padding: 5px;
-}
+  }
 
-.pcad .category{
+  .pcad .category {
     background-color: plum;
-    width: 180px;
-    height: 50px;
-    border:  solid plum;
+    width: 20px;
+    height: 20px;
+    border: solid plum;
     border-radius: 10px;
     opacity: 0.8;
-    padding: 5px;
-}
+    padding: 10px;
+  }
 
-.pcad .description{
-   
-    width: 180px;
-    height: 50px;
+  .pcad .description {
+    width: 20px;
+    height: 20px;
     margin-bottom: 30px;
-    padding: 5px;
-
+    padding: 10px;
+  }
 }
-
-
-    
