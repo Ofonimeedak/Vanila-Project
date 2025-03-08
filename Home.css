@@ -27,6 +27,13 @@ header .logo i {
   font-size: 20px;
   display: none;
 }
+header .logo img{
+  width: 50px;
+  height: 80%;
+  border: solid white;
+  border-radius: 50%;
+}
+
 
 header .desktopNav {
   display: flex;
@@ -34,20 +41,22 @@ header .desktopNav {
   align-items: center;
 
   height: 60px;
-  width: 30%;
+  width: 60%;
 }
 
 header .desktopNav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
-
   height: 60px;
   width: 100%;
+  gap: 30px;
+  padding: 20px;
 }
 
 header .desktopNav ul li {
   list-style-type: none;
+  
 }
 
 .desktopNav ul li a {
@@ -113,7 +122,7 @@ header .user {
   text-align: left;
   font-family: sans-serif;
   font-size: larger;
-  font-weight: 200;
+  font-weight: 200px;
 }
 
 .blockText .but {
@@ -125,11 +134,13 @@ header .user {
   align-items: center;
 }
 
-.but button {
-  width: 80%;
-  height: 30%;
+button {
+  width: 50px;
+  height: 30px;
+  color: black;
+  border: solid plum;
+  border-radius: 5px;
   background-color: plum;
-  border-radius: 30px;
 }
 
 .blockText a {
@@ -158,19 +169,21 @@ section {
 }
 
 .product-card {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
 .product-card .pcard {
   display: flex;
-  height: 400px;
-  width: 15%;
-  justify-content: space-around;
+  height:450px;
+  width: 25%;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
@@ -182,45 +195,50 @@ section {
   margin-right: 30px;
 }
 
-.pcad .im {
+ .im {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5px;
+  align-items: center;
+  padding: 15px;
 }
 .im img {
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 100px;
   object-fit: contain;
+  align-items: right;
+object-fit: contain;
 }
 
-.pcad .amount {
-  background-color: plum;
-  width: 20px;
-  height: 20px;
+.amount {
+  width: 80%;
+  height: 80px;
   border: solid plum;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.7;
   padding: 5px;
 }
 
-.pcad .category {
-  background-color: plum;
-  width: 20px;
-  height: 20px;
+.category {
+  
+  width: 80%;
+  height: 80px;
   border: solid plum;
   border-radius: 10px;
-  opacity: 0.8;
-  padding: 5px;
+  opacity: 0.7;
+  padding: 10px;
 }
 
-.pcad .description {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 30px;
+.description {
+  width: 80%;
+  height: 90px;
+  margin-bottom: 5px;
+  padding: 10px;
+  opacity: 0.7;
   padding: 5px;
+  border-radius: 10px;
 }
 .mobileNav {
   display: none;
@@ -237,7 +255,6 @@ section {
     align-items: center;
     background-color: plum;
     gap: 20px;
-    border: solid green;
   }
 
   header .logo {
@@ -262,15 +279,22 @@ section {
     height: 60px;
     width: 30%;
   }
+  header .logo img{
+    width: 50px;
+    height: 80%;
+    border: solid white;
+    border-radius: 50%;
+  }
 
   .mobileNav {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 70%;
     padding: 15px;
+
   }
 
   header .mobileNav ul {
@@ -280,6 +304,8 @@ section {
     flex-direction: column;
     height: 60px;
     width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
   }
 
   header .mobileNav ul {
@@ -303,6 +329,24 @@ section {
     align-items: center;
   }
 
+  #menu-btn{
+    font-size: 20px;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+
+
+  }
+  #close{
+    font-size: 20px;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+
+
+  }
+  
+
   /* Hero section */
 
   .hero {
@@ -317,7 +361,6 @@ section {
     gap: 1px;
     background-color: snow;
     flex-direction: column;
-    border: dashed red;
   }
   .hero .heroImage {
     display: flex;
@@ -382,7 +425,7 @@ section {
   }
 
   .product-card {
-    width: 80%;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -390,12 +433,13 @@ section {
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
+
   }
 
   .product-card .pcard {
     display: flex;
     height: 80%;
-    width: 70%;
+    width: 60%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -404,11 +448,9 @@ section {
     z-index: 10;
     box-shadow: 20px;
     border: solid plum;
-    margin-left: 30px;
-    margin-right: 30px;
   }
 
-  .pcad .im {
+   .im {
     height: 80%;
     width: 100%;
   }
@@ -420,29 +462,28 @@ section {
     padding-left: 10px;
   }
 
-  .pcad .amount {
-    background-color: plum;
-    width: 20px;
-    height: 20px;
+   .amount {
+    width: 90%;
+    height: 10%;
     border: solid plum;
     border-radius: 10px;
     opacity: 0.8;
     padding: 5px;
   }
 
-  .pcad .category {
-    background-color: plum;
-    width: 20px;
-    height: 20px;
+   .category {
+
+    width: 90%;
+    height: 60px;
     border: solid plum;
     border-radius: 10px;
     opacity: 0.8;
     padding: 10px;
   }
 
-  .pcad .description {
-    width: 20px;
-    height: 20px;
+  .description {
+    width: 90%;
+    height: 70px;
     margin-bottom: 30px;
     padding: 10px;
   }
